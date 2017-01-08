@@ -1,0 +1,15 @@
+server:
+  port: 
+    9001
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination:
+            apples
+# logging:
+#   path:
+#     /var/log/uh
+#   config: 
+#     classpath:uh-logback-spring.xml

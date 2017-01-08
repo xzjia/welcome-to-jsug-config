@@ -1,0 +1,19 @@
+words:
+  apple
+server:
+  port: 
+    ${PORT:${SERVER_PORT:0}}
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          group:
+            apples-group
+          durableSubscription:
+            true
+          destination:
+            apples    
