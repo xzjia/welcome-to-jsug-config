@@ -1,5 +1,5 @@
 words:
-  pen
+  PEn
 server:
   port: 
     ${PORT:${SERVER_PORT:0}}
